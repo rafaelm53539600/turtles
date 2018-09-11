@@ -1,0 +1,16 @@
+*.log
+ttrts
+*.o
+Debug/
+*~
+autom4te.cache/
+config.status
+*.pdf
+*.deps
+doc/auto/
+doc/res/snapshot.aux
+doc/res/snapshot.jpg.aux
+doc/turtles.aux
+doc/turtles.synctex.gz
+VSC++/VC2017/.vs/
+*.sdf
