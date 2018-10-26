@@ -3,10 +3,15 @@ Turtles is a VGA-compatible game mode, ideally running in  25x80 mode. The only 
 
 # Quick start
 - In Linux, Mac
+
 $ ./configure --prefix=$HOME  (To install under /home/user/bin directory)
+
 $ make install
+
 $ ttrts
+
 - In Windows.
+
 Just open solution file (.sln) with your Visual Studio, under either turtles/VSC++/VC2013 or turtles/VSC++/VC2017. No installer provided, so try to run the project from the IDE, or open a command prompt for the *.EXE
 
 # The Game
