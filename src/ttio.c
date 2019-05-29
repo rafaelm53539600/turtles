@@ -27,9 +27,9 @@ static void TIOrank()
 
   int N;
   LIST list;
+#if 0
   if ((f = fopen(RANK_PATH,"r"))==NULL)
     Error_Quit("fopen");
-#if 0
   for (N=0; fscanf(f,"%s %d\n",list[N].id, &(list[N].score))!=2 ; N++) ;
   if (feof(f)!=EOF)
     Error_Quit("fscanf");
