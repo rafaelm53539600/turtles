@@ -17,6 +17,7 @@ Provided solution files (.sln) for Visual Studio under VSC++ directory.
 - VC2013 
 - VC2017
 - VC2019
+
 You may need to tweak the platformset or WINDOWS SDK for update upon request. 
 
 No installer provided, so try to run the project from the IDE ( or search *.EXE to run from cmd).
