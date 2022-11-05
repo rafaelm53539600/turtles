@@ -12,7 +12,22 @@ $ ttrts
 
 - In Windows.
 
-Just open solution file (.sln) with your Visual Studio, under either turtles/VSC++/VC2013 or turtles/VSC++/VC2017. No installer provided, so try to run the project from the IDE, or open a command prompt for the *.EXE
+Provided solution files (.sln) for Visual Studio under VSC++ directory.
+
+- VC2013 
+- VC2017
+- VC2019
+You may need to tweak the platformset or WINDOWS SDK for update upon request. 
+
+No installer provided, so try to run the project from the IDE ( or search *.EXE to run from cmd).
+CHOOSE ALWAYS <DEBUG> <X86> AS RUNNING CONFIGURATION!!. <RELEASE><X64> MAY NOT WORK.
+
+Due to its own nature, the VGA dsiplay is very weak . Make sure that you are running Windows Console Host (as it was from XP) and not Windows Terminal (as it was from Windows 11). Never run the console in "Full Screen". It is recommended a Font size of 36 or lower, but not below.
+
+
+
+
+
 
 # The Game
 - Two players.
