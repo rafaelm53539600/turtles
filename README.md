@@ -47,5 +47,6 @@ No installer provided, so try to run the project from the IDE ( or search *.EXE 
 # The Game
 - Two players.
 - The screen marks each player's keys to control your turtle (red or yellow), up, down, right, left and shooting.
-- Your goal is to catch every jewel '@'. You cannot pass through stones 'O', but can push them. You cannot either pass through or push the ice blocks ' * ' , but you can melt them by shooting them.
+- Your goal is to catch every jewel '@'. You cannot pass through stones 'O', but can push them. You cannot either pass through or push the ice blocks ' * ' , but you can melt them by shooting them. Once you shoot, you have to wait some time to reload  bullets. (Game Dynamics was not fully finished)
 - You can also shoot your adversary, game ending when reached.
+- Score, ranking and control panels displays resective information.
