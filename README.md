@@ -25,9 +25,11 @@ $ make install  # (I could not make it work... GNU software clashing in Mac?)
 $ src/ttrts    # run from compilation folder
 
 
-- In Windows. *CHOOSE ALWAYS \<DEBUG\> \<X86\> AS RUNNING
-  CONFIGURATION!!.* \<RELEASE\>\<X64\> DOES  NOT WORK.  See video
-  under res/ folder
+- In Windows. 
+
+*CHOOSE ALWAYS \<DEBUG\> \<X86\> AS RUNNING  CONFIGURATION!!.* 
+  
+\<RELEASE\>\<X64\> DOES  NOT WORK.  See video  under res/ folder
 
 Provided solution files (.sln) for Visual Studio under VSC++ directory.
 
