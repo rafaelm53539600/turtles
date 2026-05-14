@@ -1,32 +1,44 @@
 # turtles
 Turtles is a VGA-compatible game mode, ideally running in  25x80 mode. The only purpose is to learn to program curses library as well as understand the design of graphic application, in terms of the model, the view, the controler...
 
-# Quick start
-- In Linux, Mac
+(The binary library pdcurses is bundled in folder)
 
-$ ./configure --prefix=$HOME  (To install under /home/user/bin directory)
+# Quick start
+- In Linux.
+
+
+$ ./configure --prefix=$HOME  
 
 $ make install
 
-$ ttrts
+$ ttrts   # (You may need to adjust your PATH environment variable to $HOME/bin:$PATH)
 
-- In Windows.
+- In Mac (tested as of Tahoe 26.5, intel). See video under res/ folder.
+
+$ ./configure --prefix=$HOME --disable-dependency-tracking  # don't
+know why
+
+$ make install  # (I could not make it work... GNU software clashing in Mac?)
+
+ 
+
+$ src/ttrts    # run from compilation folder
+
+
+- In Windows. *CHOOSE ALWAYS \<DEBUG\> \<X86\> AS RUNNING
+  CONFIGURATION!!.* \<RELEASE\>\<X64\> DOES  NOT WORK.  See video
+  under res/ folder
 
 Provided solution files (.sln) for Visual Studio under VSC++ directory.
 
 - VC2013 
 - VC2017
 - VC2019
+- VC2022
 
 You may need to tweak the platformset or WINDOWS SDK for update upon request. 
 
 No installer provided, so try to run the project from the IDE ( or search *.EXE to run from cmd).
-CHOOSE ALWAYS <DEBUG> <X86> AS RUNNING CONFIGURATION!!. <RELEASE><X64> MAY NOT WORK.
-
-Due to its own nature, the VGA dsiplay is very weak . Make sure that you are running Windows Console Host (as it was from XP) and not Windows Terminal (as it was from Windows 11). Never run the console in "Full Screen". It is recommended a Font size of 36 or lower, but not below.
-
-
-
 
 
 

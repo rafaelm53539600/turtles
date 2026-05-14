@@ -86,8 +86,8 @@ POST_INSTALL = :
 NORMAL_UNINSTALL = :
 PRE_UNINSTALL = :
 POST_UNINSTALL = :
-build_triplet = x86_64-pc-linux-gnu
-host_triplet = x86_64-pc-linux-gnu
+build_triplet = x86_64-apple-darwin25.5.0
+host_triplet = x86_64-apple-darwin25.5.0
 bin_PROGRAMS = ttrts$(EXEEXT)
 subdir = src
 ACLOCAL_M4 = $(top_srcdir)/aclocal.m4
@@ -163,27 +163,27 @@ ETAGS = etags
 CTAGS = ctags
 am__DIST_COMMON = $(srcdir)/Makefile.in $(top_srcdir)/depcomp
 DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)
-ACLOCAL = ${SHELL} /home/rafael/FDI/fp/turtles-0.11/missing aclocal-1.16
+ACLOCAL = ${SHELL} /Users/rafael/Documents/turtles/missing aclocal-1.16
 AMTAR = $${TAR-tar}
 AM_DEFAULT_VERBOSITY = 1
-AUTOCONF = ${SHELL} /home/rafael/FDI/fp/turtles-0.11/missing autoconf
-AUTOHEADER = ${SHELL} /home/rafael/FDI/fp/turtles-0.11/missing autoheader
-AUTOMAKE = ${SHELL} /home/rafael/FDI/fp/turtles-0.11/missing automake-1.16
-AWK = gawk
+AUTOCONF = ${SHELL} /Users/rafael/Documents/turtles/missing autoconf
+AUTOHEADER = ${SHELL} /Users/rafael/Documents/turtles/missing autoheader
+AUTOMAKE = ${SHELL} /Users/rafael/Documents/turtles/missing automake-1.16
+AWK = awk
 CC = gcc
-CCDEPMODE = depmode=gcc3
+CCDEPMODE = depmode=none
 CFLAGS = -g -O2
 CPP = gcc -E
 CPPFLAGS = 
 CYGPATH_W = echo
 DEFS = -DHAVE_CONFIG_H
 DEPDIR = .deps
-ECHO_C = 
-ECHO_N = -n
+ECHO_C = \c
+ECHO_N = 
 ECHO_T = 
-EGREP = /bin/grep -E
+EGREP = /usr/bin/grep -E
 EXEEXT = 
-GREP = /bin/grep
+GREP = /usr/bin/grep
 INSTALL = /usr/bin/install -c
 INSTALL_DATA = ${INSTALL} -m 644
 INSTALL_PROGRAM = ${INSTALL}
@@ -193,8 +193,8 @@ LDFLAGS =
 LIBOBJS = 
 LIBS = 
 LTLIBOBJS = 
-MAKEINFO = ${SHELL} /home/rafael/FDI/fp/turtles-0.11/missing makeinfo
-MKDIR_P = /bin/mkdir -p
+MAKEINFO = ${SHELL} /Users/rafael/Documents/turtles/missing makeinfo
+MKDIR_P = .././install-sh -c -d
 OBJEXT = o
 PACKAGE = turtle
 PACKAGE_BUGREPORT = rmartine@ucm.es
@@ -205,13 +205,13 @@ PACKAGE_URL =
 PACKAGE_VERSION = 0.1
 PATH_SEPARATOR = :
 SET_MAKE = 
-SHELL = /bin/bash
+SHELL = /bin/sh
 STRIP = 
 VERSION = 0.1
-abs_builddir = /home/rafael/FDI/fp/turtles-0.11/src
-abs_srcdir = /home/rafael/FDI/fp/turtles-0.11/src
-abs_top_builddir = /home/rafael/FDI/fp/turtles-0.11
-abs_top_srcdir = /home/rafael/FDI/fp/turtles-0.11
+abs_builddir = /Users/rafael/Documents/turtles/src
+abs_srcdir = /Users/rafael/Documents/turtles/src
+abs_top_builddir = /Users/rafael/Documents/turtles
+abs_top_srcdir = /Users/rafael/Documents/turtles
 ac_ct_CC = gcc
 am__include = include
 am__leading_dot = .
@@ -219,26 +219,26 @@ am__quote =
 am__tar = $${TAR-tar} chof - "$$tardir"
 am__untar = $${TAR-tar} xf -
 bindir = ${exec_prefix}/bin
-build = x86_64-pc-linux-gnu
+build = x86_64-apple-darwin25.5.0
 build_alias = 
 build_cpu = x86_64
-build_os = linux-gnu
-build_vendor = pc
+build_os = darwin25.5.0
+build_vendor = apple
 builddir = .
 datadir = ${datarootdir}
 datarootdir = ${prefix}/share
 docdir = ${datarootdir}/doc/${PACKAGE_TARNAME}
 dvidir = ${docdir}
 exec_prefix = ${prefix}
-host = x86_64-pc-linux-gnu
+host = x86_64-apple-darwin25.5.0
 host_alias = 
 host_cpu = x86_64
-host_os = linux-gnu
-host_vendor = pc
+host_os = darwin25.5.0
+host_vendor = apple
 htmldir = ${docdir}
 includedir = ${prefix}/include
 infodir = ${datarootdir}/info
-install_sh = ${SHELL} /home/rafael/FDI/fp/turtles-0.11/install-sh
+install_sh = ${SHELL} /Users/rafael/Documents/turtles/install-sh
 libdir = ${exec_prefix}/lib
 libexecdir = ${exec_prefix}/libexec
 localedir = ${datarootdir}/locale
@@ -247,7 +247,7 @@ mandir = ${datarootdir}/man
 mkdir_p = $(MKDIR_P)
 oldincludedir = /usr/include
 pdfdir = ${docdir}
-prefix = /usr/local
+prefix = /Users/rafael
 program_transform_name = s,x,x,
 psdir = ${docdir}
 runstatedir = ${localstatedir}/run
@@ -347,10 +347,10 @@ mostlyclean-compile:
 distclean-compile:
 	-rm -f *.tab.c
 
-include ./$(DEPDIR)/ttio.Po # am--include-marker
-include ./$(DEPDIR)/ttmdl.Po # am--include-marker
-include ./$(DEPDIR)/ttrts.Po # am--include-marker
-include ./$(DEPDIR)/ttscr.Po # am--include-marker
+#include ./$(DEPDIR)/ttio.Po # am--include-marker
+#include ./$(DEPDIR)/ttmdl.Po # am--include-marker
+#include ./$(DEPDIR)/ttrts.Po # am--include-marker
+#include ./$(DEPDIR)/ttscr.Po # am--include-marker
 
 $(am__depfiles_remade):
 	@$(MKDIR_P) $(@D)
@@ -359,18 +359,18 @@ $(am__depfiles_remade):
 am--depfiles: $(am__depfiles_remade)
 
 .c.o:
-	$(AM_V_CC)$(COMPILE) -MT $@ -MD -MP -MF $(DEPDIR)/$*.Tpo -c -o $@ $<
-	$(AM_V_at)$(am__mv) $(DEPDIR)/$*.Tpo $(DEPDIR)/$*.Po
-#	$(AM_V_CC)source='$<' object='$@' libtool=no \
-#	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) \
-#	$(AM_V_CC_no)$(COMPILE) -c -o $@ $<
+#	$(AM_V_CC)$(COMPILE) -MT $@ -MD -MP -MF $(DEPDIR)/$*.Tpo -c -o $@ $<
+#	$(AM_V_at)$(am__mv) $(DEPDIR)/$*.Tpo $(DEPDIR)/$*.Po
+#	$(AM_V_CC)source='$<' object='$@' libtool=no 
+#	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) 
+	$(AM_V_CC)$(COMPILE) -c -o $@ $<
 
 .c.obj:
-	$(AM_V_CC)$(COMPILE) -MT $@ -MD -MP -MF $(DEPDIR)/$*.Tpo -c -o $@ `$(CYGPATH_W) '$<'`
-	$(AM_V_at)$(am__mv) $(DEPDIR)/$*.Tpo $(DEPDIR)/$*.Po
-#	$(AM_V_CC)source='$<' object='$@' libtool=no \
-#	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) \
-#	$(AM_V_CC_no)$(COMPILE) -c -o $@ `$(CYGPATH_W) '$<'`
+#	$(AM_V_CC)$(COMPILE) -MT $@ -MD -MP -MF $(DEPDIR)/$*.Tpo -c -o $@ `$(CYGPATH_W) '$<'`
+#	$(AM_V_at)$(am__mv) $(DEPDIR)/$*.Tpo $(DEPDIR)/$*.Po
+#	$(AM_V_CC)source='$<' object='$@' libtool=no 
+#	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) 
+	$(AM_V_CC)$(COMPILE) -c -o $@ `$(CYGPATH_W) '$<'`
 
 ID: $(am__tagged_files)
 	$(am__define_uniq_tagged_files); mkid -fID $$unique

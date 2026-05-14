@@ -51,7 +51,7 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <IncludePath>..\..\pdcurses;$(IncludePath)</IncludePath>
-    <LibraryPath>..\..\pdcurses\vc2013;$(LibraryPath)</LibraryPath>
+    <LibraryPath>..\..\pdcurses\vc2022;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
