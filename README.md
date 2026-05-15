@@ -6,6 +6,7 @@ Turtles is a VGA-compatible game mode, ideally running in  25x80 mode. The only 
 # Quick start
 - Linux
 $ export PATH=$HOME/bin:$PATH
+
 $ ./configure --prefix=$HOME
 
 $ make install
@@ -16,7 +17,9 @@ $ ttrts
 - In Mac OS. Tested on:
 
 $ uname -mrsp
+
 ** Darwin 25.5.0 x86_64 i386 **
+
 $ export PATH=$HOME/bin:$PATH
 
 $ ./configure --prefix=$HOME --disable-dependency-tracking
