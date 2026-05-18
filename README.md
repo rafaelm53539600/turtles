@@ -5,6 +5,7 @@ Turtles is a VGA-compatible game mode, ideally running in  25x80 mode. The only 
 
 # Quick start
 - Linux
+
 $ export PATH=$HOME/bin:$PATH
 
 $ ./configure --prefix=$HOME
